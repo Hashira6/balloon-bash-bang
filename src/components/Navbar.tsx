@@ -12,12 +12,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-background/80 backdrop-blur-md border-b border-border shadow-lg shadow-pink-200/30 dark:shadow-primary/20">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <span className="text-3xl">🎈</span>
-            <span className="font-heading text-2xl bg-gradient-party bg-clip-text text-transparent">
+            <span className="font-heading text-2xl text-party-pink">
               KS Party Shop
             </span>
           </div>

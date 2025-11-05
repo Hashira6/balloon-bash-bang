@@ -11,7 +11,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="hero" className="relative min-h-[90vh] flex flex-col items-center justify-center overflow-hidden lg:py-20">
       {/* Video Background */}
       <div className="absolute inset-0 z-0">
         <video
@@ -31,22 +31,22 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
-        <p className="font-heading text-lg md:text-xl text-white/90 mb-4 animate-fade-in">
+      <div className="relative z-10 text-center px-4 max-w-5xl mx-auto space-y-4 md:space-y-6">
+        <p className="font-heading text-lg md:text-xl text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] mb-3 animate-fade-in">
           KS Party Shop — Bengaluru's #1 Balloon & Birthday Decor Store
         </p>
-        <h1 className="font-heading text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white mb-4 md:mb-6 drop-shadow-lg animate-fade-in leading-tight">
+        <h1 className="font-heading text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-white mb-4 md:mb-6 drop-shadow-[0_4px_12px_rgba(0,0,0,0.9)] animate-fade-in leading-tight">
           Pop the Party! 🎈
         </h1>
-        <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-white/95 mb-8 md:mb-12 font-medium drop-shadow-md animate-fade-in px-2">
+        <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-white font-medium drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)] animate-fade-in px-2 mb-6 md:mb-8">
           Helium balloons, birthday décor & Dasara dolls delivered in 2 hrs
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-12 sm:mb-16 animate-fade-in px-4">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10 md:mb-14 animate-fade-in px-4 max-w-lg mx-auto">
           <Button
             size="lg"
-            className="bg-primary text-primary-foreground hover:bg-primary/90 text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 shadow-party w-full sm:w-auto"
+            className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6 shadow-party w-full sm:w-auto font-semibold"
             onClick={() =>
               window.open("https://wa.me/+919844929897?text=Hi%20KS%20Party%20Shop", "_blank")
             }
@@ -56,7 +56,7 @@ const Hero = () => {
           <Button
             size="lg"
             variant="secondary"
-            className="bg-secondary text-secondary-foreground hover:bg-secondary/90 text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 shadow-gold w-full sm:w-auto"
+            className="bg-secondary text-secondary-foreground hover:bg-secondary/90 text-lg px-8 py-6 shadow-gold w-full sm:w-auto font-semibold"
             onClick={scrollToGallery}
           >
             See Magic
@@ -64,17 +64,17 @@ const Hero = () => {
         </div>
 
         {/* Floating UPI QR */}
-        <div className="inline-block animate-float px-4">
+        <div className="inline-block animate-float px-4 mt-4">
           <div
-            className="bg-white/95 backdrop-blur-sm rounded-2xl p-4 sm:p-6 cursor-pointer hover:scale-105 transition-smooth shadow-party max-w-xs mx-auto"
+            className="bg-white/95 backdrop-blur-sm rounded-2xl p-5 sm:p-6 cursor-pointer hover:scale-105 transition-smooth shadow-party max-w-xs mx-auto"
             onClick={() => setQrOpen(true)}
           >
             <img
               src="https://nfc.dgtechsoln.com/wp-content/uploads/2025/03/WhatsApp-Image-2025-03-11-at-2.41.48-PM.jpeg"
               alt="UPI QR Code"
-              className="w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 mx-auto rounded-lg"
+              className="w-32 h-32 sm:w-36 sm:h-36 md:w-40 md:h-40 mx-auto rounded-lg"
             />
-            <p className="mt-2 sm:mt-3 text-xs sm:text-sm md:text-base font-semibold text-foreground">
+            <p className="mt-3 text-sm md:text-base font-semibold text-foreground">
               Tap to Pay & Book Instantly
             </p>
           </div>
