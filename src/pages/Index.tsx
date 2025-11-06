@@ -20,7 +20,7 @@ const Index = () => {
       <Reviews />
       <Footer />
       <ContactBar />
-      <WhatsAppFloat />
+      {/* <WhatsAppFloat /> */}
       <DarkModeToggle />
     </div>
   );

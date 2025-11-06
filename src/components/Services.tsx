@@ -50,9 +50,9 @@ const Services = () => {
 
                 {/* Back */}
                 <div className="flip-card-back absolute w-full h-full bg-gradient-party rounded-2xl shadow-lg p-8 flex flex-col items-center justify-center text-center">
-                  <service.icon className="w-12 h-12 text-white mb-4" />
-                  <h3 className="font-heading text-xl text-white mb-3">{service.title}</h3>
-                  <p className="text-white/90 text-sm leading-relaxed">{service.back}</p>
+                  <service.icon className="w-12 h-12 text-foreground dark:text-white mb-4" />
+                  <h3 className="font-heading text-xl text-foreground dark:text-white mb-3">{service.title}</h3>
+                  <p className="text-foreground/90 dark:text-white/90 text-sm leading-relaxed">{service.back}</p>
                 </div>
               </div>
             </div>
